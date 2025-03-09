@@ -1,0 +1,14 @@
+# Global LLM configuration
+[llm]
+model = "gemini-2.0-flash"  # 使用指定模型
+base_url = "https://generativelanguage.googleapis.com/v1beta"     # Gemini API端点
+api_key = "AIzaSyBIHY16iQMkjwnO2X4WwErf7poILDb6wmU"                       # 替换为你的Gemini API密钥
+max_tokens = 4096                       # 保持生成长度一致
+temperature = 0.0                       # 关闭随机性
+
+# Optional configuration for specific LLM models
+# 若需为特定功能配置独立模型，可保留此部分
+[llm.vision]
+model = "gemini-2.0-flash"
+base_url = "https://generativelanguage.googleapis.com/v1beta"
+api_key = "AIzaSyBIHY16iQMkjwnO2X4WwErf7poILDb6wmU"
